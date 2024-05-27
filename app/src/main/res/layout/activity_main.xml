@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?><!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@color/gray">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/ic_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:contentDescription="@string/main_menu_title"
+                android:src="@drawable/menu"
+                android:tint="@color/black"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/menu_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/ic_menu"
+                android:gravity="center"
+                android:text="@string/main_menu_title"
+                android:textSize="@dimen/_14ssp" />
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp">
+
+        <TextView
+            android:id="@+id/btn_category_apps"
+            style="@style/AppCategory"
+            android:background="@drawable/bg_button_category_apps"
+            android:text="@string/main_category_apps"
+            app:layout_constraintEnd_toStartOf="@id/btn_category_games"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/btn_category_games"
+            style="@style/AppCategory"
+            android:background="@drawable/bg_button_category_games"
+            android:text="@string/main_category_games"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_category_apps"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/btn_category_movies"
+            style="@style/AppCategory"
+            android:background="@drawable/bg_button_category_movies"
+            android:text="@string/main_category_movies"
+            app:layout_constraintBottom_toTopOf="@id/btn_category_news"
+            app:layout_constraintEnd_toStartOf="@id/btn_music"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_category_apps" />
+
+        <TextView
+            android:id="@+id/btn_music"
+            style="@style/AppCategory"
+            android:background="@drawable/bg_button_category_music"
+            android:text="@string/main_category_music"
+            app:layout_constraintBottom_toTopOf="@id/btn_category_news"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_category_movies"
+            app:layout_constraintTop_toBottomOf="@id/btn_category_games" />
+
+        <TextView
+            android:id="@+id/btn_category_books"
+            style="@style/AppCategory"
+            android:background="@drawable/bg_button_category_books"
+            android:text="@string/main_category_books"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_category_news"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_category_movies" />
+
+        <TextView
+            android:id="@+id/btn_category_news"
+            style="@style/AppCategory"
+            android:background="@drawable/bg_button_category_news"
+            android:text="@string/main_category_news"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_category_books"
+            app:layout_constraintTop_toBottomOf="@id/btn_music" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:paddingHorizontal="@dimen/_12sdp">
+
+        <TextView
+            android:id="@+id/section_popular"
+            style="@style/AppSectionTitle"
+            android:text="@string/main_section_popular_apps_subtitle" />
+
+        <TextView
+            android:id="@+id/btn_more_popular_app"
+            style="@style/ActionMore"
+            android:layout_toEndOf="@id/section_popular" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        style="@style/AppLayoutWrapContent"
+        android:layout_marginBottom="@dimen/_10sdp">
+
+        <LinearLayout
+            style="@style/AppLayoutWrapContent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                style="@style/AppLayoutWrapContent"
+                android:layout_marginHorizontal="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/ic_trivia"
+                    style="@style/AppItemIcon"
+                    android:contentDescription="@string/main_app_title_trivia"
+                    android:src="@drawable/ic_trivia" />
+
+                <TextView
+                    android:id="@+id/text_trivia"
+                    style="@style/AppItemTitle"
+                    android:layout_below="@id/ic_trivia"
+                    android:text="@string/main_app_title_trivia" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/AppLayoutWrapContent"
+                android:layout_marginHorizontal="@dimen/_5sdp">
+
+                <ImageView
+                    android:id="@+id/ic_korea_music"
+                    style="@style/AppItemIcon"
+                    android:contentDescription="@string/main_app_title_korea_music"
+                    android:src="@drawable/ic_korea_music" />
+
+                <TextView
+                    android:id="@+id/text_korea_music"
+                    style="@style/AppItemTitle"
+                    android:layout_below="@id/ic_korea_music"
+                    android:text="@string/main_app_title_korea_music" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/AppLayoutWrapContent"
+                android:layout_marginHorizontal="@dimen/_5sdp">
+
+                <ImageView
+                    android:id="@+id/ic_pokemon"
+                    style="@style/AppItemIcon"
+                    android:contentDescription="@string/main_app_title_pokemon"
+                    android:src="@drawable/ic_pokemon" />
+
+                <TextView
+                    android:id="@+id/txt_pokemon"
+                    style="@style/AppItemTitle"
+                    android:layout_below="@id/ic_pokemon"
+                    android:text="@string/main_app_title_pokemon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/AppLayoutWrapContent"
+                android:layout_marginHorizontal="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/ic_cookie"
+                    style="@style/AppItemIcon"
+                    android:contentDescription="@string/main_app_title_cookie"
+                    android:src="@drawable/ic_cookie" />
+
+                <TextView
+                    android:id="@+id/txt_cookie"
+                    style="@style/AppItemTitle"
+                    android:layout_below="@id/ic_cookie"
+                    android:text="@string/main_app_title_cookie" />
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:paddingHorizontal="@dimen/_12sdp">
+
+        <TextView
+            android:id="@+id/section_new"
+            style="@style/AppSectionTitle"
+            android:text="@string/main_section_new_update_subtitle" />
+
+        <TextView
+            style="@style/ActionMore"
+            android:layout_toEndOf="@id/section_new" />
+    </RelativeLayout>
+
+    <HorizontalScrollView style="@style/AppLayoutWrapContent">
+
+        <LinearLayout
+            style="@style/AppLayoutWrapContent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                style="@style/AppLayoutWrapContent"
+                android:layout_marginHorizontal="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/ic_tiktok"
+                    style="@style/AppItemIcon"
+                    android:contentDescription="@string/main_app_title_tiktok"
+                    android:src="@drawable/tiktok" />
+
+                <TextView
+                    android:id="@+id/text_tiktok"
+                    style="@style/AppItemTitle"
+                    android:layout_below="@id/ic_tiktok"
+                    android:text="@string/main_app_title_tiktok" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/AppLayoutWrapContent"
+                android:layout_marginHorizontal="@dimen/_5sdp">
+
+                <ImageView
+                    android:id="@+id/ic_whatsapp"
+                    style="@style/AppItemIcon"
+                    android:contentDescription="@string/main_app_title_wa"
+                    android:src="@drawable/wa" />
+
+                <TextView
+                    android:id="@+id/text_wa"
+                    style="@style/AppItemTitle"
+                    android:layout_below="@id/ic_whatsapp"
+                    android:text="@string/main_app_title_wa" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/AppLayoutWrapContent"
+                android:layout_marginHorizontal="@dimen/_5sdp">
+
+                <ImageView
+                    android:id="@+id/ic_dana"
+                    style="@style/AppItemIcon"
+                    android:contentDescription="@string/main_app_title_dana"
+                    android:src="@drawable/dana" />
+
+                <TextView
+                    android:id="@+id/text_dana"
+                    style="@style/AppItemTitle"
+                    android:layout_below="@id/ic_dana"
+                    android:text="@string/main_app_title_dana" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/AppLayoutWrapContent"
+                android:layout_marginHorizontal="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/ic_ig"
+                    style="@style/AppItemIcon"
+                    android:contentDescription="@string/main_app_title_ig"
+                    android:src="@drawable/ig" />
+
+                <TextView
+                    android:id="@+id/txt_ig"
+                    style="@style/AppItemTitle"
+                    android:layout_below="@id/ic_ig"
+                    android:text="@string/main_app_title_ig" />
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

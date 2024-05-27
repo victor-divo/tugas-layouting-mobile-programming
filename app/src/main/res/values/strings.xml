@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Pertemuan 2 Tugas 1</string>
+    
+    <string name="main_category_apps">Apps</string>
+    <string name="main_category_games">Games</string>
+    <string name="main_category_movies">Movies &amp; TV</string>
+    <string name="main_category_music">Music</string>
+    <string name="main_category_books">Books</string>
+    <string name="main_category_news">News</string>
+    <string name="main_action_more">More</string>
+
+    <string name="main_app_title_trivia">Trivia 2</string>
+    <string name="main_app_title_korea_music">Kpop Music</string>
+    <string name="main_app_title_pokemon">Pokemon</string>
+    <string name="main_app_title_cookie">Cookie Run</string>
+    <string name="main_app_title_tiktok">TikTok</string>
+    <string name="main_app_title_wa">WhatsApp</string>
+    <string name="main_app_title_dana">DANA</string>
+    <string name="main_app_title_ig">Instagram</string>
+
+    <string name="main_menu_title">Google Play</string>
+    <string name="main_section_popular_apps_subtitle">Popular Apps + Games</string>
+    <string name="main_section_new_update_subtitle">New + Update Game</string>
+
+</resources>

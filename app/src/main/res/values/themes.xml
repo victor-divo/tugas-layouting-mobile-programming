@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Pertemuan2Tugas1" parent="android:Theme.Material.Light.NoActionBar" />
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Pertemuan2Tugas1" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="AppCategory">
+        <item name="android:layout_width">@dimen/_140sdp</item>
+        <item name="android:layout_height">@dimen/_35sdp</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:padding">@dimen/_6sdp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:onClick">button</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="ActionMore">
+        <item name="android:background">@drawable/bg_button_action_more</item>
+        <item name="android:layout_width">@dimen/_70sdp</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:padding">@dimen/_6sdp</item>
+        <item name="android:text">@string/main_action_more</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:onClick">button</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="AppLayoutWrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppItemIcon">
+        <item name="android:layout_width">@dimen/_70sdp</item>
+        <item name="android:layout_height">@dimen/_70sdp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="AppItemTitle">
+        <item name="android:layout_width">@dimen/_70sdp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="AppSectionTitle">
+        <item name="android:layout_width">@dimen/_224sdp</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/_15ssp</item>
+    </style>
+
+</resources>
